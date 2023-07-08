@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>..:: Livros ::..</title>
+</head>
+
+<body>
+    <!--Aula 15/04/2023-->
+    <!--Início Menu Responsivo-->
+    <header id="header">
+        <a id="logo" href="index.html"><img src="img/Black_White_Illustrative_Dance_Logo__1_-removebg-preview.png"
+                alt="Black_White_Illustrative_Dance_Logo__1_-removebg-preview"></a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="linkMenu" href="./index.html">Home</a></li>
+                <li><a class="linkMenu" href="./produtos.html">Livros</a></li>
+                <li><a class="linkMenu" href="./resenha.html">Resenha</a></li>
+                <li><a class="linkMenu" href="./generos.html">Gêneros</a></li>
+                <li><a class="linkMenu" href="./contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fim Menu Responsivo-->
+     <!-- inicio form contato -->
+<div class="contato">
+    <div class="container">
+        <div class="row">
+           
+            <!-- Inicio Formulario -->
+            <div class="col-md-6">
+                 <!-- Inicio da TAg section com texto -->
+            <section class="col-12">
+                <h2>Entre em contato conosco!</h2>
+                <p>Para dúvidas,elogios ou reclamações, insira suas informações abaixo.</p>
+            </section>
+            <div class="div-entry">
+                <p class="entry-label"> Como prefere nosso contato?</p>
+                <label class="entry-label" for="email-choice"><input type="radio" name="contact-choice"
+                        id="email-choice">Email</label>
+
+                <label class="entry-label" for="phone-choice"><input type="radio" name="contact-choice"
+                        id="phone-choice">Telefone</label>
+
+                <label class="entry-label" for="whatsapp-choice" lang="en"><input type="radio" name="contact-choice"
+                        id="whatsapp-choice">Whatsapp</label>
+            </div>
+            <label class="entry-label" for="day-period">Em qual horário prefere ser atendido?</label>
+            <select class="entry" name="day-period" id="">
+                <option value="none">---Selecione aqui</option>
+                <option value="morning">Manhã</option>
+                <option value="afternoon">Tarde</option>
+                <option value="evening">Noite</option>
+            <!-- Fim da TAg section com texto -->
+                <div class="form_main">
+                    <form class="form-horizontal" method="post" action="">
+                        <fieldset>
+                          <h4 class="text-left header">Preencha suas informações: <span></span> </h4>  
+                          <!-- Inicio campo 1 -->
+                          <div class="form-group">
+                            <div class="col-md-10 col-md-offset-1">
+                                <input id="fname" name="name" type="text" placeholder="Insira seu primeiro nome aqui" class="form-control" required>
+
+                            </div>
+                          </div>
+                          <!-- Fim campo 1 -->
+                          <!-- Inicio campo 2 -->
+                          <div class="form-group">
+                            <div class="col-md-10 col-md-offset-1">
+                                <input id="lname" name="name" type="text" placeholder="Insira seu último nome aqui" class="form-control" required>
+
+                            </div>
+                          </div>
+                          <!-- Fim campo 2 -->
+                          <!-- Inicio campo 3 -->
+                          <div class="form-group">
+                            <div class="col-md-10 col-md-offset-1">
+                                <input id="email" name="email" type="email" placeholder="Insira seu email aqui" class="form-control" required>
+
+                            </div>
+                          </div>
+                          <!-- Fim campo 3-->
+                          <!-- Inicio campo 4 -->
+                          <div class="form-group">
+                            <div class="col-md-10 col-md-offset-1">
+                                <input id="phone" name="phone" type="text" placeholder="Insira seu telefone aqui" class="form-control" required>
+
+                            </div>
+                          </div>
+                          <!-- Fim campo 4 -->
+                          <!-- Inicio campo 5 -->
+                          <div class="form-group">
+                            <div class="col-md-10 col-md-offset-1">
+                                <textarea id="message" name="message" type="text" placeholder="Insira sua mensagem aqui, que retornaremos o mais breve possível." class="form-control-msg" rows="7" required></textarea>
+
+                            </div>
+                          </div>
+                          <!-- Fim campo 5-->
+                          <!-- Inicio Button -->
+                          <div class="from form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="formbutton">Enviar</button>
+                            </div>
+                          </div>
+                          <!-- Fim button submit -->
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- fim formulario -->
+
+            <!-- Inicio maps -->
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="panel panel-default">
+                        <section id="txt-local" class="text-center header">
+                    
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Fim maps -->
+        </div>
+    </div>
+</div>
+
+<!-- fim form contato -->
+<!-- inicio Whatsapp -->
+<div class="whatsapp">
+<div class="container-grid logo-whats">
+    <a  target="_blank"href="https://api.whatsapp.com/send?phone=15991157816&text=Ol%C3%A1,estava%20no%20site,e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"><img src="img/redes_sociais/whats.png" class="quica" alt="Contato Whatsapp"></a>
+
+</div>
+</div>
+<!-- Fim Whatsapp -->
+    <!--Início Footer -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="row m-0">
+                <!-- inicio logo -->
+                <div id="logo-rodape" class="col-md-4">
+                    <figure>
+                        <img src="img/Black_White_Illustrative_Dance_Logo__1_-removebg-preview.png" alt="logo_rodape">
+                    </figure>
+                </div>
+                <!-- fim logo -->
+                <!-- Inicio texto -->
+                <div class="col-md-4">
+                    <div class="info-contatos">
+                        <p>Email:</p>
+                        <p>example@corp.net</p><br>
+                        <p>Endereço:</p>
+                        <p>Avenida Abc,123</p><br>
+                        <p>Telefone:</p>
+                        <p>+55(15) 5555-1234</p>
+                    </div>
+                </div>
+                <!-- Fim texto -->
+                <!-- Inicio da midias sociais -->
+                <!-- Alt+shift+seta para baixo>duplica linha -->
+                <!-- ctrl+space>Mostra o caminho do objeto dentro src -->
+                <div class="col-md-4">
+                    <figure class="redes-sociais">
+                        <a href="#"><img src="./img/redes_sociais/face.png" alt="Facebook"></a>
+                        <a href="#"><img src="./img/redes_sociais/insta.png" alt="Instagram"></a>
+                        <a href="#"><img src="./img/redes_sociais/youtube.png" alt="Youtube"></a>
+                        <a href="#"><img src="./img/redes_sociais/linkedin.png" alt="Linkedin"></a>
+
+                    </figure>
+                    <br>
+                    <a href="./index.html">Home</a>
+                    <a href="./produtos.html">Produtos</a>
+                    <a href="./index.html">Curiosidades</a>
+                    <a href="./resenha.html">Resenha</a>
+                    <a href="./index.html">Genêros</a>
+                    <a href="./contato.html">Contatos</a>
+                </div>
+                <!-- fim midias sociais -->
+                <!-- inicio direitos autorais -->
+                <div class="col-12">
+                    <p class="direitos">Direitos Autorais</p>
+                </div>
+                <!-- Fim direitos Autorais -->
+            </div>
+        </div>
+    </footer>
+    <!-- fim rodape -->
+
+
+</body>
+
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/script_menu.js"></script>
+
+
+
+</html>
