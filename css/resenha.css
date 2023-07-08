@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+/* Aula 01-04-03*/
+
+body, ul{
+    margin:0px;
+    padding:0px;
+}
+
+#header #menu a{
+    color: rgba(50, 255, 238, 0.911);
+    text-decoration: none;
+    font-family:'Caveat';
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: 0.3s;
+    margin-right: 30px;
+}
+#header #menu a:hover{
+font-size:1.6em;
+transition:0.3s;
+text-shadow: 4px 4px 6px #ffffff;
+}
+
+#logo img:hover {
+   box-shadow:4px  4px 6px #ffffff;
+   transition:0.3;
+
+}
+#logo img{
+    float: left;
+    height: 110px;
+    position: relative;
+    top:0px ;
+    left: 5px;
+    border-radius: 200px;
+}
+#header{
+    width: 100%;
+    position: relative;
+    z-index: 90;
+    box-sizing: border-box;
+    height: 115px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000;
+    box-shadow: 6px 6px 8px #0000007a;
+    transition: 0.3s;
+
+}
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+#btn-mobile {
+    display: none;
+}
+/*
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    padding-top: 5px;
+} I
+*/
+#carouselExampleInterval{
+    position: relative;
+    z-index: 10;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 6px 6px 8px #ffffff7a;
+    transition: 0.3s;
+    place-items: normal  legacy;
+    margin-block: 10px;
+    height: auto;
+}
+@media(max-width:600px){
+    #menu{
+        display: block;
+        position: absolute;
+        width: 15em;
+        top: 70px;
+        right: 0px;
+        background: #000000;
+        transition: 0.6s;
+        z-index: 10000;
+        height: 0px;
+        padding-left: 5px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #menu li{
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: hidden;
+  
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+
+    }
+    #hamburger {
+        border-top: 2px solid;
+        width: 35px;
+        color: #00eeff;
+    }
+    #hamburger::after ,
+    #hamburger::before {
+        content: '';
+        display: block; 
+        width: 35px; 
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.4s;
+        position: relative;
+        border-top: 2px solid;
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+/* Estilo CSS Banner */
+.section-banner-home {
+width: 100%;
+height: 500px;
+margin-top: 10px;
+padding: 50px;
+background-color: rgb(0, 0, 0);
+color: white;
+}
+.section-banner-home img {
+ max-height: 400px;
+ width: 70%;
+ display: block;
+}
+.section-banner-home .texto-banner {
+    margin-top: 30px;
+    font-size: 22px;
+}
+.section-banner-home .texto-banner h1 {
+    font-size: 30px;
+    width: 60%;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.section-banner-home .texto-banner p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+.section-banner-home .texto-banner a{
+    color:rgb(122, 255, 237);
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    padding: 4px 14px;
+    font-size: 15px;
+}
+.section-banner-home .texto-banner a:hover{
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px white;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* Fim CSS Banner */
+
+/* CSS Destaque */
+.destaque h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+}
+.destaque figcaption {
+    font-size: 13px;
+    color:black;
+    text-decoration:none;
+    font-weight: bold;
+    text-align: center;
+}
+.destaque a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+/* Fim CSS Destaque */
+
+/*Css Novidades*/
+.novidades .text-body{
+    width: 80%;
+    margin: 70px auto;
+}
+.novidades h2{
+    color: black;
+    font-size: 26px;
+    width: 70%;
+}
+.novidades p {
+    color: black;
+}
+.novidades a{
+    color:white;
+    text-decoration: underline;
+    text-decoration-color: violet;
+    padding: 6px 12px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+/*fim css novidade*/
+/*inicio css galerias*/
+
+.galeria{
+    margin: 60px auto 20px;
+}
+.galeria h2{
+    text-align: center;
+    font-size: 24px;
+}
+.galeria p{
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+    width: 30%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery img {
+    height: 50px;
+}
+/*Fim css galerias */
+/* Inicio css footer */
+
+.rodape{
+    padding: 50px 50px 0;
+}
+.rodape .container #logo-rodape img {
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition: transform .3s;
+    display: block;
+}
+.rodape .container  #logo-rodape img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.rodape .info-contato  p{
+margin: 0px;
+}
+.rodape a{
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+
+}
+.rodape:hover{
+    font-weight: bold;
+}
+.rodape .redes-sociais{
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 45px;
+    height: 40px;
+    padding-left: 0;
+    margin-left: 0.5rem;
+    transition: transform .3s;
+    border-radius: 150px; /*arrendondando div do objeto redes sociais*/
+
+}
+.rodape .redes-sociais  img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.rodape p.direitos{
+    text-align: center;
+    margin-top: 40px;
+    }
+    /*inicio Css streamer(resenha)*/
+    .embed-container{
+        position: relative;
+        padding-bottom: 0;
+        height: auto;
+        max-width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top:80px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        background: #000000;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-family:'Caveat';
+    }
+    .embed-container h2{
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .embed-container iframe {
+        position:relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        box-shadow: rgb(81, 80, 80) 0.5em .0.5em 0.3em;
+        transition: transform .3s;
+        display: block;
+    }
+    .embed-container iframe:hover{
+        transform: scale(1.5);
+        box-shadow: 0 0 10px rgba(0, 0,0,0.446);
+        flex: 1;
+        z-index: 1;
+    }
+   .embed-container .col-lg-4{
+    margin-top: 25px;
+
+   } 
+   .embed-container p{
+    text-align: center;
+    font-size: 20px;
+   }
+    /*Fim Css streamer(resenha)*/
+
+    /* Inico Css contato */
+    .contato{
+        margin-top: 70px;
+    }
+    .form_main{
+        width: 100%;
+    }
+    .form_main h4{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 59px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+    .col-md-6 #txt-local{
+        border-bottom: 1px solid #000000;
+        margin-bottom: 16px;
+        position: relative;
+    }
+       
+    
+    .text-left{
+        border-bottom: 1px solid #000000;
+        padding-bottom: 9px;
+        position: relative;
+    }
+    .text-left span{
+        background: #111e8d none repeat  scroll 0 0;
+        bottom: -20px;
+        height: 3px;
+        left: 0;
+        position: absolute;
+        width: 0px;
+    }
+    .form-horizontal{
+        border-radius: 107px;
+        padding: 6px;
+    }
+    .form-control[type="text"]{
+        border: 1px solid #ccc;
+        margin: 10px 0;
+        padding: 10px 0 10px 5px;
+        width: 100%;
+    }
+    .form-control[type="email"]{
+        border: 1px solid #ccc;
+        margin: 10px 0;
+        padding: 10px 0 10px 5px;
+        width: 100%;
+    }
+    .form-control-msg[type="text"] {
+        margin: 10px 0 0;
+        padding: 10px 0 10px 5px;
+        width: 100%;
+    }
+    .formbutton[type="submit"] {
+        -moz-box-shadow:inset 0px 1px 0px 0px rgba(50, 255, 238, 0.911);
+        -webkit-box-shadow:inset 0px 1px 0px 0px rgba(50, 255, 238, 0.911);
+        box-shadow:inset 0px 1px 0px 0px rgba(50, 255, 238, 0.911);
+        background-color: rgba(69, 221, 208, 0.911);
+        display: inline-block;
+        border: 1px solid #000000;
+        border-radius: 25px;
+        color: #ffffff;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 35px;
+        margin: 10px 0;
+        padding: 0;
+        text-transform: uppercase;
+        width: 30%;
+    }
+    .formbutton:hover{
+        background-color: #000000;
+    }
+    .formbutton:active{
+        position: relative;
+        top: 1px;
+    }
+    .txt:hover{
+        background:rgba(255, 0, 0, 0) none repeat scroll 0 0;
+        color:#000000 ;
+        transition: all 0.5s ease 0s;
+    }
+
+    /* Fim css contato */
+    /*Fim css map */ 
+    /* inicio css whats */
+    .whatsapp{
+        position: fixed;
+        z-index: 2;
+        top: 200px;
+        right: 40px;
+    }
+    .whatsapp img{
+     height: 60px;
+
+    }
+    .whatsapp .quica{
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        animation: quica .4s cubic-bezier(.53,0.03,.67,1.06);
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+    @keyframes quica{
+        0%{
+            transform: translateY(0px);
+        }
+        100% {
+            transform:translateY(100%);
+            widht: 70px;
+            height: 40px;
+        }
+    }
+
+
+    /* inicio CSS card produtos */
+.text-center .md-50{
+    margin-top: 20px;
+}
+.sinopse {
+    position: relative;
+    top: -0px;
+    left: 690px;
+    max-height: 500px;
+    width: 500px
+}
+
+
+    .card img{
+        max-height:642px ;
+        width: 642px;
+    }
+    .mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+    }
+    .overlay .mask{
+        opacity: 0;
+        transition: all .4s ease-in-out;
+
+    }
+    .overlay mask:hover{
+        opacity: 1;
+    }
+    .entry-label {
+        display: block;
+        margin: 8px auto;
+        width: 50%;
+    }
+    
+    .entry .form-contact textarea {
+        display: block;
+        margin: 0 auto 25px;
+        padding: 4px 9px;
+        font-size: 18px;
+        width: 50%;
+        box-sizing: border-box;
+        resize: none;
+        overflow: auto;
+    }
+    
+    #checkbox .div-entry {
+        margin: 30px auto;
+    }
+    
+    .info-livro {
+        position: relative;
+        width: 900px;
+        height: 200px;
+        left: 500px;
+    }
